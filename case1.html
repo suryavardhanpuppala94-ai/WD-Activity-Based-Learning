@@ -9,118 +9,84 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #fffaf2;
-            color: #444444;
-            line-height: 1.6;
+            background-color: white;
+            color: black;
+            line-height: 1.5;
         }
-
         .header {
             background-color: darkslateblue;
-            color: #f8faf8;
+            color: white;
             text-align: center;
-            padding: 25px 15px;
+            padding: 20px;
         }
-
         .header h1 {
             margin: 0;
+            font-size: 28px;
         }
-
-        .header p {
-            margin-bottom: 0;
-        }
-
         .navbar {
-            background-color: #55a5eb;
-            text-align: center;
-            padding: 12px;
+            background-color: #dddddd;
+            text-align: right;
+            padding: 10px 20px;
         }
-
+        .navbar-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
         .navbar a {
-            display: inline-block;
-            color: #444444;
+            color: black;
             text-decoration: none;
-            padding: 8px 16px;
-            margin: 3px;
-            border-radius: 5px;
+            margin: 0 10px;
         }
-
         .navbar a:hover {
-            background-color: #dcebdc;
+            text-decoration: underline;
         }
-
         .container {
-            max-width: 850px;
-            margin: 25px auto;
+            max-width: 800px;
+            margin: 20px auto;
             padding: 0 15px;
         }
-
         .section {
-            background-color: #ffffff;
-            border: 1px solid #e5e0d5;
-            border-left: 5px solid #bfd5bd;
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 20px;
-            scroll-margin-top: 15px;
+            background-color: white;
+            border: 1px solid #dddddd;
+            padding: 15px;
+            margin-bottom: 15px;
         }
-
         .section h2 {
-            color: #526b58;
             margin-top: 0;
+            text-align: center;
         }
-
-        .section li {
-            margin-bottom: 8px;
-        }
-
         .footer {
             background-color: darkslateblue;
-            color: #f4f9f5;
+            color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            padding: 10px;
         }
-
-        @media (max-width: 500px) {
-            .navbar a {
-                padding: 7px 10px;
-                margin: 2px;
-            }
-
-            .section {
-                padding: 15px;
-            }
+        .footer p {
+            margin: 0;
         }
     </style>
 </head>
-
 <body>
-
     <header class="header">
-        <h1>Dr RVR NRI university</h1>
-        <p>Learn, Grow, and Build Your Future</p>
+        <h1>Dr RVR NRI University</h1>
     </header>
-
-    <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#facilities">Facilities</a>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-inner">
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#facilities">Facilities</a>
+        </div>
     </nav>
-
     <main class="container">
-
         <section id="about" class="section">
             <h2>About Us</h2>
             <p>
-                Greenfield College provides a friendly learning
-                environment where students can gain knowledge,
-                develop skills, and prepare for their future careers.
-                Our goal is to support students in academic learning
-                and personal development.
+                Dr RVR &amp; NRI University provides a supportive learning environment
+                where students gain knowledge, develop practical skills, and prepare
+                for their future careers.
             </p>
         </section>
-
         <section id="courses" class="section">
             <h2>Our Courses</h2>
             <ul>
@@ -130,7 +96,6 @@
                 <li>Business Administration</li>
             </ul>
         </section>
-
         <section id="admissions" class="section">
             <h2>Admissions</h2>
             <p>
@@ -144,7 +109,6 @@
                 and following admission updates.
             </p>
         </section>
-
         <section id="facilities" class="section">
             <h2>Our Facilities</h2>
             <ul>
@@ -155,12 +119,9 @@
                 <li>Student support services</li>
             </ul>
         </section>
-
     </main>
-
     <footer class="footer">
-        <p>Dr RVR NRI University | College Information Website</p>
+        <p>Copyrights &copy; 2023 Dr RVR &amp; NRI University. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
